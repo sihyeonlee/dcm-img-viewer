@@ -121,7 +121,6 @@ class DcmViewer(QMainWindow):
         fig.subplots_adjust(left=0, bottom=0, right=1, top=1, hspace=0, wspace=0)
         self.canvas = FigureCanvasQTAgg(fig)
 
-        self.canvas.resize(self.clip_data.shape[0]*1.2, self.clip_data.shape[1]*1.2)
 
         self.ui.layout.addWidget(self.canvas)
 
